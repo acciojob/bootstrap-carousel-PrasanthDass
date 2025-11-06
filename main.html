@@ -1,13 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title>Bootstrap Carousel</title>
+
+  <!-- Bootstrap 3 CSS (required for glyphicons) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <style>
+    /* Basic styling for slide background placeholders */
+    .carousel .item {
+      height: 300px;
+      text-align: center;
+      color: #fff;
+      font-size: 40px;
+      line-height: 300px;
+    }
+    .first-slide { background: #444; }
+    .second-slide { background: #666; }
+    .third-slide { background: #888; }
+    .fourth-slide { background: #aaa; color: #000; }
+    .fifth-slide { background: #ccc; color: #000; }
+  </style>
+
 </head>
 <body>
-    <!-- Write your code here -->
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- Carousel -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+
+    <div class="item first-slide">
+      First slide
+    </div>
+
+    <div class="item second-slide">
+      Second slide
+    </div>
+
+    <div class="item third-slide active"> <!-- Third slide active -->
+      Third slide
+    </div>
+
+    <div class="item fourth-slide">
+      Fourth slide
+    </div>
+
+    <div class="item fifth-slide">
+      Fifth slide
+    </div>
+
+  </div>
+
+  <!-- Left Control -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+
+  <!-- Right Control -->
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+
+</div>
+
+<!-- Bootstrap JS, jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </body>
- 
 </html>
